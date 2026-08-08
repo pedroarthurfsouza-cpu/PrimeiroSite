@@ -7,15 +7,15 @@
 
 <style>
 
-a {
-    text-decoration: none;
-}
+    a {
+        text-decoration: none;
+    }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://www.opentext.com/assets/images/products-solutions/solution-industry-category/opentext-image-ov-hightech-en.jpg");
@@ -62,6 +62,12 @@ body{
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
+
+.BotaoDaAura{
+    background-color: whitesmoke;
+    font-size: x-large;
+    
+}
 </style>
 
 
@@ -71,7 +77,7 @@ body{
 
 <div class = "barra-superior">
     <div>
-        <h1 class = "titulo-principal">Bem Vindo ao Meu Site</h1>
+        <h1 class = "titulo-principal">Urubu do Pix</h1>
     </div>
 </div>
 
@@ -84,7 +90,20 @@ body{
         Com grandes poderes, vem grandes responsabilidades.
     </blockquote>
 </div>
+<div class = "citacao">
+<button id= "meubotao" class="BotaoDaAura">
+    Clique Aqui - Botao da AURA
+</button>
+</div>
 
+
+
+
+
+<script>
+    const botao = document.getElementById("meubotao");
+    botao.addEventListener("click", ()=> alert("Aura Demais"));
+</script>
 
 </body>
 </html>
