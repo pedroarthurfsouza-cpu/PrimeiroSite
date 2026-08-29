@@ -44,6 +44,15 @@
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
 
+        
+        .links-iniciais :hover {
+            text-align: center;
+            margin: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-decoration: underline;
+        }
+
+
         .links-uteis {
             font-size: xx-large;
             color: #fc0000;
@@ -102,15 +111,17 @@
     </div>
 
     <form class="citacao">
-        <p class="textoQualquer">Digite seu nome</p>
-        <input class="blocoDeEscrita" placeholder="Nome">
-        <p class="textoQualquer">Digite sua idade</p>
-        <input class="blocoDeEscrita" placeholder="Idade">
+
+        <label for="nome" class="textoQualquer">Digite seu nome</label><br>
+        <input id="nome" class="blocoDeEscrita" placeholder="Nome"><br>
+        <label for="idade" class="textoQualquer">Digite sua idade</label><br>
+        <input id="idade" class="blocoDeEscrita" placeholder="Idade"><br>
+        <input type="submit" class="botaoDeEnvio" id="meubotao">
 
     </form>
 
     <div class="citacao">
-        <button id="meubotao" class="BotaoDeEnvio">
+        <button id="meubotao2" class="BotaoDeEnvio">
             Clique Aqui para enviar a informações!
         </button>
     </div>
@@ -126,6 +137,9 @@
     <script>
         const botao = document.getElementById("meubotao");
         botao.addEventListener("click", () => alert("Aura Demais - Suas informações foram enviadas com sucesso!"));
+
+        const botao2 = document.getElementById("meubotao2");
+        botao2.addEventListener("click", () => alert("Aura Demais - Suas informações foram enviadas com sucesso!"));
     </script>
 
 </body>
